@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body::-webkit-scrollbar {
+    @apply hidden;
+  }
+  
+  .container {
+    @apply max-w-[1920px] mx-auto
+  }
+
+  .btn.btn-hero {
+    @apply px-4 py-2 border border-[#242424] rounded-full text-sm uppercase tracking-widest text-gray-500 transition-all hover:border-primary hover:text-primary;
+  }
+
+  .box{
+    @apply w-full md:w-4/5 p-5 xl:p-10 mx-auto
+  }
+
+  .tooltip {
+    @apply bg-white text-[#cc7c82] px-2 py-1 rounded-md shadow-[0 4px 8px 0 #00000040] opacity-0 pointer-events-none transition-all duration-300 ease-[cubic-bezier(0.68, -0.55, 0.265, 1.55)] absolute top-0 w-max group-hover:-top-8 group-hover:opacity-100 before:absolute before:content-[''] before:h-2 before:w-2 before:bg-inherit before:-bottom-1 before:left-1/2 before:-translate-x-1/2 before:rotate-45 text-md;
+  }
+
+  ::selection {
+    @apply bg-slate-100 text-slate-800
+  }
+}
