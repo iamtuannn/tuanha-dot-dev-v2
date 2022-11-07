@@ -1,11 +1,8 @@
 import React from 'react';
 import ewrr from '../assets/images/ewrr.png';
 import CustomText from '../components/CustomText';
-import {useWasViewed} from '../hooks/useWasViewed';
 
 export default function About() {
-  const {setRef, wasViewed} = useWasViewed();
-  const animation = wasViewed ? 'animate-base' : 'null';
 
   return (
     <div className='flex justify-center items-center relative container' id='about'>

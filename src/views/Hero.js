@@ -9,7 +9,7 @@ export default function Hero() {
 
   const downloadResume = () => {
     const a = document.createElement('a');
-    a.href = '/HoangAnhTuan-FrontEndDev-221102.pdf';
+    a.href = '/HoangAnhTuan-FrontEndDev-221107.pdf';
     a.click();
   };
 
